@@ -83,7 +83,7 @@ function checkboxPureInit( treeId , selectionItem ){
 			}
 			/* update children checkboxes */
 			modelNode = checkboxTree.tree.treeView("getNodes",nodeContent$)[0] ;
-			updateChecboxes(modelNode,checkboxTree.tree) ;
+			updateCheckboxes(modelNode,checkboxTree.tree) ;
 			
 			return false; // stop propagation and prevent default
 		}
@@ -145,10 +145,10 @@ function addSubTree(node){
 	
 }
 
-function updateChecboxes(node,tree){
+function updateCheckboxes(node,tree){
 	if(node.children){
 		node.children.forEach(function(inode,index,arrayOfChildren){
-			updateChecboxes(inode,tree);
+			updateCheckboxes(inode,tree);
 		});
 	}
 	var treeNode = tree.treeView("getTreeNode",node) ;
@@ -173,7 +173,7 @@ function checkboxSet(checkboxTree){
 		
 		resetSelection(checkboxTree.tree,checkboxTree.topLevel,reloaded) ;
 		updateChecked(checkboxTree.topLevel,dummyArray) ;
-		updateChecboxes(checkboxTree.topLevel,checkboxTree.tree) ;
+		updateCheckboxes(checkboxTree.topLevel,checkboxTree.tree) ;
 	}
 }
 
