@@ -2,7 +2,7 @@
 Description : this project adds the checbox functionality upon the treeView built in plugin of Apex 5.
 
 Usage:
-* add the js file to the static files of your app and add its URL to the page in the URL for JS files
+* add the js and the css files to the static files of your app and add their URLs in their respective page section
 * in the global variables, add a var to hold the principal tree parameters
   var myCheckBoxTree ;
 * add a page item to store the selection, hidden or text field i.e. P100_SELECTION
