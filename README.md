@@ -1,5 +1,5 @@
 # treeViewCheckbox
-Description : this project adds the checbox functionality upon the treeView built in plugin of Apex 5.
+Description : this project adds the checkbox functionality upon the treeView built in plugin of Apex 5.
 
 Usage:
 * add the js and the css files to the static files of your app and add their URLs in their respective page section
