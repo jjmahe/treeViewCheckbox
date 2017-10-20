@@ -9,7 +9,7 @@ Usage:
 * create a treeView region and in its attributes, give it a statis id i.e. mytree
 * create a DA when page loads that will configure your treeView as a checbox tree. 
   a 'execute javascript' like this :
-    myCheckBoxTree = checkboxPureInit('mytree','P100_SELECTION') ;
+    myCheckBoxTree = checkboxPureInit('#mytree','P100_SELECTION') ;
     
 If you reload the selection from a previous session, then you can setup the tree like this :
   checkboxSet(myCheckBoxTree) ;
